@@ -15,6 +15,7 @@ import { CrmModule } from "./crm/crm.module";
 import { CurrencyModule } from "./currency/currency.module";
 import { DashboardModule } from "./dashboard/dashboard.module";
 import { DatabaseModule } from "./database/database.module";
+import { DawnBridgeModule } from "./dawn-bridge/dawn-bridge.module";
 import { DealsModule } from "./deals/deals.module";
 import { FieldsModule } from "./fields/fields.module";
 import { GoogleModule } from "./google/google.module";
@@ -46,6 +47,7 @@ import { WorkspaceModule } from "./workspace/workspace.module";
 		BetterAuthModule.forRoot({ auth, middleware: logAuthRoute }),
 		AuthModule,
 		HealthModule,
+		DawnBridgeModule,
 		TrpcModule,
 		UsersModule,
 		CompaniesModule,

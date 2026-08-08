@@ -117,6 +117,13 @@ export class EnvironmentVariables {
 
 	@IsOptional()
 	@IsString()
+	@MinLength(32, {
+		message: "DAWN_SERVICE_TOKEN must be at least 32 characters when configured.",
+	})
+	DAWN_SERVICE_TOKEN?: string;
+
+	@IsOptional()
+	@IsString()
 	CRM_TELEMETRY_DISABLED?: string;
 }
 
